@@ -1,0 +1,8 @@
+[template]
+cargo_generate_version = ">=0.9.0"
+
+[conditional.'crate_type == "bin"']
+ignore = [ "src/lib.rs" ]
+
+[conditional.'crate_type == "lib"']
+ignore = [ "src/main.rs" ]

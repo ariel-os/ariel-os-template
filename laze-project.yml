@@ -1,0 +1,12 @@
+imports:
+  - git:
+      url: https://github.com/ariel-os/ariel-os
+      commit: 9233ab0361f56aab0989110dd2dab27807ce9f27
+    dldir: ariel-os
+
+apps:
+  - name: {{ crate_name }}
+{% if crate_type == "lib" %}
+    selects:
+      - embedded-test-only
+{% endif %}
