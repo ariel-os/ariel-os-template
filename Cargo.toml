@@ -7,9 +7,7 @@ edition = "2021"
 harness = false
 {% endif %}
 [dependencies]
-ariel-os = { path = "build/imports/ariel-os/src/ariel-os", features = [
-  "threading",
-] }
+ariel-os = { path = "build/imports/ariel-os/src/ariel-os", features = [] }
 ariel-os-boards = { path = "build/imports/ariel-os/src/ariel-os-boards" }
 {% if crate_type == "lib" %}
 [dev-dependencies]
