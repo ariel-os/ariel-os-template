@@ -9,4 +9,4 @@ apps:
 {% if crate_type == "lib" %}
     selects:
       - embedded-test-only
-{% endif %}
+{% endif -%}

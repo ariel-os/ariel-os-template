@@ -12,4 +12,4 @@ ariel-os-boards = { path = "build/imports/ariel-os/src/ariel-os-boards" }
 {% if crate_type == "lib" %}
 [dev-dependencies]
 embedded-test = { version = "0.6.0", features = ["ariel-os"] }
-{% endif %}
+{% endif -%}
