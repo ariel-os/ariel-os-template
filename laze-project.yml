@@ -5,8 +5,8 @@ imports:
     dldir: ariel-os
 
 apps:
-  - name: {{ crate_name }}
+  - name: {{ project-name }}
 {% if crate_type == "lib" %}
     selects:
       - embedded-test-only
-{% endif %}
+{% endif -%}
