@@ -1,7 +1,7 @@
 [package]
 name = "{{ project-name }}"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 {% if crate_type == "lib" %}
 [lib]
 harness = false
@@ -11,5 +11,5 @@ ariel-os = { path = "build/imports/ariel-os/src/ariel-os", features = [] }
 ariel-os-boards = { path = "build/imports/ariel-os/src/ariel-os-boards" }
 {% if crate_type == "lib" %}
 [dev-dependencies]
-embedded-test = { version = "0.6.0", features = ["ariel-os"] }
+embedded-test = { version = "0.6.1", features = ["ariel-os"] }
 {% endif -%}
