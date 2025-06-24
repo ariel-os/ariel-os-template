@@ -13,3 +13,8 @@ ariel-os-boards = { path = "build/imports/ariel-os/src/ariel-os-boards" }
 [dev-dependencies]
 embedded-test = { version = "0.6.1", features = ["ariel-os"] }
 {% endif -%}
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = [
+  'cfg(context, values(any()))',
+] }
