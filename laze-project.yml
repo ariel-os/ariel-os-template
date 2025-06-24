@@ -1,7 +1,7 @@
 imports:
   - git:
       url: https://github.com/ariel-os/ariel-os
-      tag: v0.2.0
+      commit: 28abca7282edc4ef545c2480f3242b5fabdc4ed3
     dldir: ariel-os
 
 apps:
