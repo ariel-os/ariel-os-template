@@ -1,8 +1,9 @@
 [template]
 cargo_generate_version = ">=0.9.0"
+exclude = [".github"]
 
 [conditional.'crate_type == "bin"']
-ignore = [ "src/lib.rs" ]
+ignore = ["src/lib.rs"]
 
 [conditional.'crate_type == "lib"']
-ignore = [ "src/main.rs" ]
+ignore = ["src/main.rs"]
