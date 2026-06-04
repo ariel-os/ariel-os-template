@@ -11,7 +11,7 @@ ariel-os = { path = "build/imports/ariel-os/src/ariel-os", features = [] }
 ariel-os-boards = { path = "build/imports/ariel-os/src/ariel-os-boards" }
 {% if crate_type == "lib" %}
 [dev-dependencies]
-embedded-test = { version = "0.6.1", features = ["ariel-os"] }
+embedded-test = { version = "0.7.1", features = ["ariel-os-09"] }
 {% endif -%}
 
 [lints.rust]
